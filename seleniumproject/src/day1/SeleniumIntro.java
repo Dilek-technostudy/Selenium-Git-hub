@@ -11,7 +11,7 @@ public class SeleniumIntro {
         System.setProperty( "webdriver.chrome.driver", "D:\\TechnoStudy\\Selenium\\ChromeDriver\\chromedriver.exe" );
         WebDriver driver = new ChromeDriver();
         driver.get( "https://www.seleniumeasy.com/test/input-form-demo.html" );
-        driver.manage().window().maximize();
+
         Thread.sleep( 1000 );
         driver.findElement( By.name( "first_name" ) ).sendKeys( "Techno" );
         Thread.sleep( 1000 );
