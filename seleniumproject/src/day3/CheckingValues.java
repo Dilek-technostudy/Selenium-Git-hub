@@ -32,7 +32,7 @@ public class CheckingValues {
     }
 
     public static void checkElementColorByName(WebDriver driver, String myTag, String testColor) {
-        WebElement h1 = driver.findElement( By.tagName( myTag ) );
+         WebElement h1 = driver.findElement( By.tagName( myTag ) );
         String h1Color = h1.getCssValue( "color" );
         System.out.println(h1Color);
         String hex = Color.fromString(h1Color).asHex();
