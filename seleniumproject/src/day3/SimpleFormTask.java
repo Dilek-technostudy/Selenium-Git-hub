@@ -9,7 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.List;
 
-public class SimpleTask {
+public class SimpleFormTask {
 
     public static void main(String[] args) {
         System.setProperty( "webdriver.chrome.driver",

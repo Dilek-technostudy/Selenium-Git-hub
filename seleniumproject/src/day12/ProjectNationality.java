@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 public class ProjectNationality {
     public static void main(String[] args) throws InterruptedException {
@@ -18,11 +19,11 @@ public class ProjectNationality {
         driver.findElement(By.cssSelector("[formcontrolname=\"password\"]")).sendKeys("admin");
         driver.findElement(By.cssSelector("button[aria-label=\"LOGIN\"]")).click();
 
-        Thread.sleep(2000);
+        driver.manage().timeouts().implicitlyWait(20 , TimeUnit.SECONDS);
 
  driver.findElement(By.xpath("//fa-icon[@class='collapsable-arrow ng-fa-icon ng-tns-c27-13 ng-star-inserted']")).click();
 
-        Thread.sleep(2000);
+        driver.manage().timeouts().implicitlyWait(20 , TimeUnit.SECONDS);
 driver.findElement(By.xpath("//fa-icon[@class='collapsable-arrow ng-fa-icon ng-tns-c27-14 ng-star-inserted']")).click();
 
         Thread.sleep(3000);

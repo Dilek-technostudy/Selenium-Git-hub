@@ -16,7 +16,7 @@ public class CheckingValues {
         System.setProperty("webdriver.chrome.driver",
                 "C:\\Users\\dilek\\IdeaProjects\\chrome\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
-        driver.get("C:\\Users\\dilek\\IdeaProjects\\Seleniumgit\\seleniumproject\\src\\day3\\form.html");
+        driver.get("file:///C:\\Users\\dilek\\IdeaProjects\\Seleniumgit\\seleniumproject\\src\\day3\\form.html");
 
 //        String myTag="h3";
 //        String testColor="#00ff00";

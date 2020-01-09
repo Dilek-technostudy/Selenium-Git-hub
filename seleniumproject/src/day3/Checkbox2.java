@@ -6,15 +6,18 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.List;
-
-public class homework2 {
+// https://www.seleniumeasy.com/test/basic-checkbox-demo.html
+// Check the Multiple Checkbox and check the button message
+// When you check all the checkboxes, button message will change to 'Uncheck All'
+// When you uncheck at least one checkbox, button message will change to 'Check All'
+public class Checkbox2 {
     public static void main(String[] args) {
 
 
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\dilek\\IdeaProjects\\chrome\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
 
-        driver.get("https://www.seleniumeasy.com/test/basic-first-form-demo.html");
+        driver.get( "https://www.seleniumeasy.com/test/basic-checkbox-demo.html");
 
         driver.findElement(By.className("dropdown-toggle")).click();
 

@@ -26,7 +26,7 @@ public class SignUpFormSubmissionValidation {
         System.setProperty( "webdriver.chrome.driver", "C:\\Users\\dilek\\IdeaProjects\\chrome\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
 
-        String path = "file:///" + System.getProperty( "user.dir" ) + "/src/day9/homework/homework1/SignUpFormSolution.html";
+        String path = "file:///" + System.getProperty( "user.dir" ) + "/src/day9/homework/SignUpForm.html";
         driver.get( path );
 
         Map<String, String> expectedValuesMap = initializeValues();

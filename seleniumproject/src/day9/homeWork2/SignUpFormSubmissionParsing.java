@@ -18,7 +18,7 @@ public class SignUpFormSubmissionParsing {
     public static void main(String[] args) {
         System.setProperty( "webdriver.chrome.driver", "C:\\Users\\dilek\\IdeaProjects\\chrome\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
-        String path = "file:///" + System.getProperty( "user.dir" ) + "/src/day9/homework/homework1/SignUpFormSolution.html";
+        String path = "file:///" + System.getProperty( "user.dir" ) + "/src/day9/homework/chekcbox/SignUpFormSolution.html";
         driver.get( path );
         driver.findElement( By.name( "username" ) ).sendKeys( "name" );
         driver.findElement( By.name( "password" ) ).sendKeys( "password" );
